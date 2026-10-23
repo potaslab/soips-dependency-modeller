@@ -1,5 +1,7 @@
 # SOIPS Dependency Modeller
 
+**[Open the hosted application](https://potaslab.github.io/soips-dependency-modeller/)**
+
 Run `npm run build` locally to produce `dist/SOIPS-Dependency-Modeller.html`, then open that file directly in a browser. It embeds the application and reference model, so using the built file requires no installation, account, server or network. Keep a copy anywhere on your computer, or share it alongside your model JSON. `dist/index.html` is the equivalent static-hosting output. These generated files are excluded from Git and are not hosted downloads in this source repository; follow Development and verification below to build them from a source checkout.
 
 The software originates in the Self-Organising Information-Processing Systems Hypothesis — **J. R. Potas (2026)**. Model authorship is separate from software attribution. The reference model cites *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. Its publication link remains pending.
@@ -28,6 +30,18 @@ For a completely unrelated example: choose **New blank model**, then **Edit**. C
 Drag nodes in Edit, or enter coordinates in their form. Dropping a node selects it and updates its X/Y fields automatically; Save JSON retains the new layout. Auto arrange repositions all nodes by category and can be undone. Zoom/Fit and graph scrolling handle larger models. Node boxes work with Enter/Space; position fields provide a keyboard alternative to dragging. Undo/Redo also works with Ctrl/Cmd+Z outside text fields.
 
 The unsaved indicator tracks changes to the model. Saving a form updates the working model in memory; **Save JSON** is the explicit download checkpoint. New/Open/Reference/navigation warn before discarding unsaved edits. There is no automatic browser-storage backup. Browsers may independently ask where to save downloads.
+
+## Contributing models
+
+Contributions are welcome: alternative interpretations, models of other capabilities or systems, and models that challenge the SOIPS reference's assumptions.
+
+To develop a model, open the [interactive application](https://potaslab.github.io/soips-dependency-modeller/), modify the reference model or create a new model, and export it using **Save JSON**.
+
+Discuss scientific proposals through [GitHub Discussions](https://github.com/potaslab/soips-dependency-modeller/discussions), then submit completed models to [`models/contributed/`](models/contributed/) by pull request. Browse the [model catalogue](models/README.md) for the reference and community collection.
+
+See [Contributing guidelines](CONTRIBUTING.md) for submission instructions, documentation requirements and model attribution.
+
+Community-contributed models retain their authorship and are identified separately from the original SOIPS Figure 2 reference. Inclusion in the repository does not constitute independent scientific validation or endorsement of a model's assumptions.
 
 ## Development and verification
 
