@@ -1,0 +1,5 @@
+import fs from 'node:fs';import path from 'node:path';
+const root=path.resolve(import.meta.dirname,'..'),lock=JSON.parse(fs.readFileSync(path.join(root,'package-lock.json'),'utf8'));
+const rows=Object.entries(lock.packages).filter(([name])=>name).map(([name,p])=>`| ${name.replace(/^node_modules\//,'')} | ${p.version} | ${p.license??'See package licence'} |`);
+fs.writeFileSync(path.join(root,'docs/THIRD_PARTY.md'),`# Third-party development dependencies\n\nGenerated from package-lock.json. No third-party application runtime or CDN is required. Build/test tools are development dependencies; installed package licence files remain in node_modules. Application source code is licensed under [MIT](../LICENSE). The identified SOIPS reference JSON files and scientific-model documentation are licensed under [CC BY 4.0](../LICENSE-DATA). Third-party dependencies retain their own applicable licences and notices.\n\n| Package | Locked version | Licence metadata |\n|---|---|---|\n${rows.join('\n')}\n`);
+console.log('Recorded dependency versions and licence metadata.');

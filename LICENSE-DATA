@@ -1,0 +1,46 @@
+# SOIPS scientific model licence
+
+Copyright (c) 2026 J. R. Potas
+Original model author: J. R. Potas (2026).
+
+The following repository content is licensed under Creative Commons Attribution
+4.0 International (CC BY 4.0):
+
+- src/models/soips-reference.json
+- models/soips-potas2026-figure2.json
+- docs/SCIENTIFIC_MODEL.md
+
+The licence includes the scientific explanations, notes, evidence and provenance
+contained in these identified model files. Copies of this material embedded in
+the standalone application retain their CC BY 4.0 licence.
+
+Canonical licence reference and full terms:
+https://creativecommons.org/licenses/by/4.0/legalcode
+
+Commercial use, modification and redistribution are permitted under those terms.
+When sharing the material or adaptations, retain the original attribution and
+applicable notices, provide a licence reference, and indicate modifications as
+required by CC BY 4.0. This summary does not replace the licence's full terms,
+including its disclaimer of warranties.
+
+Provisional scientific citation:
+Potas, J. R. (2026). Rethinking Consciousness: The Self-Organising
+Information-Processing Systems Hypothesis.
+No DOI or final publication details are supplied.
+
+## Scope boundaries
+
+Application source code is licensed under the MIT Licence in LICENSE. MIT does
+not apply to the scientific JSON or scientific-model documentation listed above.
+The standalone HTML therefore contains MIT software and CC BY 4.0 model material.
+
+These repository licence files do not license the manuscript, supplementary audit
+or published figures outside the identified repository content. In particular,
+they do not apply CC BY 4.0 to external manuscript files or Figures 1 and 2.
+
+Independently created user models retain their own authorship and may specify
+their own licences. Derivatives of the SOIPS reference must preserve its source
+attribution and identify modifications in accordance with CC BY 4.0.
+
+Third-party materials retain their applicable licences and notices; see
+docs/THIRD_PARTY.md. No rights beyond those held by the licensor are granted.

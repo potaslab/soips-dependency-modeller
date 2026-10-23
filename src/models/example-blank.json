@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "1.0.0",
+  "modelId": "blank-example",
+  "metadata": {"title": "Untitled dependency model", "authors": [], "description": "", "version": "0.1.0"},
+  "categories": [], "nodes": [], "relations": [], "view": {"includeCredit": true},
+  "analysisSettings": {"maxStates": 50000, "maxConfigurations": 1000, "timeoutMs": 1500}
+}

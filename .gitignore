@@ -1,0 +1,18 @@
+node_modules/
+dist/
+test-results/
+coverage/
+*.log
+
+# Private development records
+/housekeeping/
+
+# Local configuration
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+
+# Operating-system files
+.DS_Store
+Thumbs.db

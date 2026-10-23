@@ -1,0 +1,1990 @@
+{
+  "schemaVersion": "1.0.0",
+  "modelId": "soips-figure2-2026",
+  "metadata": {
+    "title": "SOIPS consciousness dependency model",
+    "authors": [
+      "J. R. Potas"
+    ],
+    "year": 2026,
+    "version": "Figure 2 · 2026",
+    "description": "Interpretive dependency model accompanying Supplementary S1. Configurations express commitments within this model, not experimentally established thresholds for consciousness.",
+    "citation": "Potas, J. R. (2026). Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis.",
+    "sourceUrl": "",
+    "licence": "CC BY 4.0",
+    "created": "2026-10-22",
+    "updated": "2026-10-22",
+    "researchReady": true,
+    "provenance": {
+      "source": "manuscript/SOIPS_Supplementary_S1_dependency_audit.md",
+      "publicationLinkStatus": "Pending; no DOI supplied",
+      "reference": true
+    }
+  },
+  "categories": [
+    {
+      "id": "cap",
+      "label": "Composite capabilities",
+      "colour": "#7F77DD",
+      "fill": "#EEEDFE",
+      "order": 0,
+      "description": "Composite capabilities (Table 3)"
+    },
+    {
+      "id": "dimB",
+      "label": "Dimension B",
+      "colour": "#D85A30",
+      "fill": "#FAECE7",
+      "order": 1,
+      "description": "Elementary functional families",
+      "band": true,
+      "labelSpace": 154
+    },
+    {
+      "id": "dimA",
+      "label": "Dimension A",
+      "colour": "#1D9E75",
+      "fill": "#E1F5EE",
+      "order": 2,
+      "description": "Forms of informational organisation",
+      "band": true,
+      "labelSpace": 104
+    },
+    {
+      "id": "eng",
+      "label": "SOIPS engine operations",
+      "colour": "#77766F",
+      "fill": "#F1EFE8",
+      "order": 3,
+      "description": "Elementary information-mediated operations (Table 1)"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "CON",
+      "label": "Consciousness",
+      "shortLabel": "Consciousness",
+      "code": "",
+      "categoryId": "cap",
+      "description": "A configuration of flexible cognition and awareness in which awareness-related information participates in flexible cognition. That participation is shown as the link from flexible cognition to awareness, and within Dimension A as A4 building on A2.",
+      "order": 0,
+      "notes": "Consciousness\n*Awareness-related information participating in flexible cognition.* (Table 3; §5)\n\n- **Highest-order requirement:** Awareness participating in flexible cognition\n- **Defining:** Awareness, Flexible cognition\n- **Supports:** Attention, Memory, Monitoring, Reasoning\n- **Engine operations required:** Receive and access, Transform, Gate and filter, Route\n- **Defining relation:** awareness-related information participates in flexible cognition; within Dimension A, A4 coordinates content held in A2\n- **Used by:** none\n- **Basis:** §5: 'The defining relation is not the simultaneous presence of two independent capacities. It is the participation of awareness-related information in flexible cognition.' Awareness and flexible cognition are defining, and the participation relation is recorded separately. §5 lists attention, memory, monitoring, reasoning and self-representation as possible contributors. Self-representation is not an element of Tables 2 or 3; in this model it corresponds to A2 or A3 structures whose target is the system itself (§3), so it is not a separate element.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 408,
+        "y": 6
+      },
+      "width": 150,
+      "height": 42
+    },
+    {
+      "id": "AGE",
+      "label": "Agency",
+      "shortLabel": "Agency",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Information-guided response selection and action, using links between states, actions and consequences.",
+      "order": 1,
+      "notes": "Agency\n*Information-guided response selection and action.* (Table 3)\n\n- **Highest-order requirement:** A3 Relational models\n- **Defining:** B3 Regulation, A3 Relational models\n- **Supports:** B2 Inference, Planning, Learning\n- **Engine operations required:** Receive and access, Transmit, Transform, Combine and integrate\n- **Used by:** none in the current tables\n- **Basis:** Table 3: 'Links between states, actions and consequences; possible planning and learning'. Links between states, actions and consequences are A3, which is defining. Information-guided action is mapped to B3 Regulation (defining) and response selection to B2 Inference (support) [JC]. Planning and learning are supports.\n- **Alternative reading:** No other element depends on agency in the current tables, so agency appears in neither Figure 2 configuration.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 115.60000000000001,
+        "y": 70
+      },
+      "width": 150,
+      "height": 42
+    },
+    {
+      "id": "FCOG",
+      "label": "Flexible cognition",
+      "shortLabel": "Flexible cognition",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Selecting, coordinating or adapting cognitive processing across changing contexts. A4 provides the architecture; at least one learned, inferential or evaluative function supplies processing to coordinate. Elementary cognition can contribute.",
+      "order": 2,
+      "notes": "Flexible cognition\n*Selecting, coordinating or adapting cognitive processing across changing contexts.* (Table 3; §5)\n\n- **Highest-order requirement:** A4 plus one of learning, inference or evaluation\n- **Defining:** A4 Context-sensitive informational organisation\n- **At least one of:** Learning, B2 Inference, Evaluation\n- **Supports:** Elementary cognition\n- **Engine operations required:** Gate and filter, Route (plus those of the chosen option)\n- **Within consciousness:** receives awareness-related information\n- **Used by:** Consciousness (defining)\n- **Basis:** Table 3: 'Context-sensitive organisation; various learned, inferential or evaluative functions', unqualified, so A4 is defining and at least one of learning, inference or evaluation is required. §5: elementary cognition 'can contribute to flexible cognition without being identical to it', so it is a support. Within consciousness, flexible cognition receives awareness-related information (the participation relation).\n- **Alternative reading:** §5 describes A4 as 'an architecture that can support flexible cognition'. The model reads this as describing what A4 is capable of, following Table 3; reading it as optional would remove A4 from the minimal configuration (S1.10).",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 340,
+        "y": 70
+      },
+      "width": 150,
+      "height": 42
+    },
+    {
+      "id": "PLA",
+      "label": "Planning",
+      "shortLabel": "Planning",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Inference about actions and consequences, using models of alternatives.",
+      "order": 3,
+      "notes": "Planning\n*Inference about actions and consequences, potentially regulation.* (Table 3)\n\n- **Highest-order requirement:** A3 Relational models\n- **Defining:** B2 Inference, A3 Relational models\n- **Supports:** B3 Regulation, Prediction, Memory\n- **Engine operations required:** Receive and access, Transform, Combine and integrate\n- **Used by:** Agency (supports)\n- **Basis:** Inference and models of alternatives (A3) are defining. 'Potentially regulation' and 'prediction and memory where useful' are supports.\n- **Alternative reading:** Inferring the consequences of actions overlaps with prediction, which Table 3 marks as optional for planning.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 115.60000000000001,
+        "y": 134
+      },
+      "width": 150,
+      "height": 42
+    },
+    {
+      "id": "ECOG",
+      "label": "Elementary cognition",
+      "shortLabel": "Elementary cognition",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Interpreting and using organised information within relatively stable processing arrangements. Can contribute to flexible cognition. Table 3 also accepts inferred relationships in place of representations.",
+      "order": 4,
+      "notes": "Elementary cognition\n*Interpreting and using organised information within relatively stable processing arrangements.* (Table 3; §5)\n\n- **Highest-order requirement:** A2 plus B2 or B3\n- **Defining:** A2 Representations\n- **At least one of:** B2 Inference, B3 Regulation\n- **Supports:** Perception, Evaluation\n- **Engine operations required:** Receive and access, Transform (plus those of the chosen option)\n- **Used by:** Flexible cognition (supports)\n- **Basis:** §5: elementary cognition uses organised information 'to interpret conditions, derive conclusions or guide responses', so at least one of inference (B2) or regulation (B3) is required. Representations are treated as defining [JC]. Table 3's 'possibly perception and evaluation' gives two supports. §5: elementary cognition 'can contribute to flexible cognition without being identical to it'.\n- **Alternative reading:** Table 3's 'Representations or inferred relationships' can be read as a second one-of group (A2 or B2). Because B2 itself requires A2 in this model, this reading changes no configuration.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 340,
+        "y": 134
+      },
+      "width": 150,
+      "height": 42
+    },
+    {
+      "id": "AWA",
+      "label": "Awareness",
+      "shortLabel": "Awareness",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Organised availability of information about relevant conditions to processes that can monitor, evaluate or respond to them.",
+      "order": 5,
+      "notes": "Awareness\n*The organised availability of information about relevant internal or external conditions to processes that can monitor, evaluate or respond to those conditions.* (Table 3; §5)\n\n- **Highest-order requirement:** A2 Representations plus one consuming process\n- **Defining:** A2 Representations\n- **At least one of:** Monitoring, Evaluation, B3 Regulation\n- **Supports:** Perception, Memory, B2 Inference\n- **Engine operations required:** Receive and access, Transform (plus those of the chosen option)\n- **Within consciousness:** participates in flexible cognition\n- **Used by:** Consciousness (defining)\n- **Basis:** Table 3: 'Informative states available to monitoring, evaluation or response'. Informative states about a condition map to A2, which is defining. The consuming process forms a one-of group: monitoring, evaluation, or response, mapped to B3 Regulation [JC]. §5 notes awareness can concern remembered, inferred or internal conditions and contrasts it with perception, giving memory, inference and perception as supports [JC].\n- **Alternative reading:** 'Response' could be mapped to agency instead of regulation. The minimal configurations are unchanged, but agency, and through it planning and prediction, would join the expanded configuration (S1.10).",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 564.4,
+        "y": 134
+      },
+      "width": 150,
+      "height": 42
+    },
+    {
+      "id": "PER",
+      "label": "Perception",
+      "shortLabel": "Perception",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Organising and interpreting sensory information. Needs A2 with integration.",
+      "order": 6,
+      "notes": "Perception\n*Organising and interpreting sensory information.* (Table 3)\n\n- **Highest-order requirement:** A2 Representations\n- **Defining:** A2 Representations\n- **Also requires, through A2 Representations:** Combine and integrate (optional for A2, required here)\n- **Supports:** B2 Inference, Attention\n- **Engine operations required:** Receive and access, Transform, Combine and integrate\n- **Used by:** Awareness, Elementary cognition (supports)\n- **Basis:** Table 3: 'Sensory access, integration and representations; inference or attention where useful'. Representations are defining. Sensory access and integration map to Receive and access and Combine and integrate, both supplied through A2; integration is optional for A2 in general and required here. Inference and attention are supports.\n- **Alternative reading:** 'Interpreting' could make inference defining. This does not change either configuration in Figure 2.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 85,
+        "y": 198
+      },
+      "width": 130,
+      "height": 42
+    },
+    {
+      "id": "PRE",
+      "label": "Prediction",
+      "shortLabel": "Prediction",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Inference, sometimes with retention, over temporal or causal relationships. Those relationships are A3 by Table 2’s definition.",
+      "order": 7,
+      "notes": "Prediction\n*Inference, sometimes with retention.* (Table 3)\n\n- **Highest-order requirement:** A3 Relational models\n- **Defining:** B2 Inference, A3 Relational models\n- **Supports:** B1 Retention, Learning\n- **Engine operations required:** Receive and access, Transform, Combine and integrate\n- **Used by:** Planning (supports)\n- **Basis:** Inference is defining. Table 3 requires 'temporal or causal relationships', which are relationships among informative states and so A3 under Table 2; A3 is therefore treated as defining [JC], although 'models and prior learning where useful' could suggest models are optional. Retention ('sometimes') and prior learning ('where useful') are supports.\n- **Alternative reading:** If temporal or causal relationships could be held without A3, A3 becomes a support. Prediction is not part of either Figure 2 configuration.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 255,
+        "y": 198
+      },
+      "width": 130,
+      "height": 42
+    },
+    {
+      "id": "MON",
+      "label": "Monitoring",
+      "shortLabel": "Monitoring",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Access to and tracking of information about a monitored condition.",
+      "order": 8,
+      "notes": "Monitoring\n*Access and tracking, potentially comparison or regulation.* (Table 3)\n\n- **Highest-order requirement:** A2 Representations\n- **Defining:** A2 Representations\n- **Supports:** Evaluation, B3 Regulation, B1 Retention, B2 Inference\n- **Engine operations required:** Receive and access, Transform\n- **Used by:** Awareness (one of); Consciousness (supports)\n- **Basis:** Table 3: 'Information about the monitored condition; retention or inference may contribute'. Information about a condition is mapped to A2, which is defining [JC] and supplies access. Comparison (evaluation), regulation, retention and inference are supports.\n- **Alternative reading:** Tracking change over time could be read as requiring retention. Under that reading the configuration in Figure 2A is no longer minimal (S1.10).",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 425,
+        "y": 198
+      },
+      "width": 130,
+      "height": 42
+    },
+    {
+      "id": "REA",
+      "label": "Reasoning",
+      "shortLabel": "Reasoning",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Inference applied to relationships and conclusions. Representations arrive through B2; models are an optional extra.",
+      "order": 9,
+      "notes": "Reasoning\n*Inference applied to relationships and conclusions.* (Table 3)\n\n- **Highest-order requirement:** B2 Inference\n- **Defining:** B2 Inference\n- **Supports:** A3 Relational models, Evaluation, Attention, Memory\n- **Engine operations required:** Receive and access, Transform, Combine and integrate\n- **Used by:** Consciousness (supports)\n- **Basis:** Table 3: 'Representations or models; evaluation, attention or memory may contribute'. Inference is defining. Representations are already present through B2's A2, so the 'representations or models' group reduces to models (A3) as an optional extra. Evaluation, attention and memory are supports.\n- **Alternative reading:** Multi-step reasoning could be read as requiring retention of intermediate results. Reasoning is a support in Figure 2B only, so neither configuration changes.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 595,
+        "y": 198
+      },
+      "width": 130,
+      "height": 42
+    },
+    {
+      "id": "ATT",
+      "label": "Attention",
+      "shortLabel": "Attention",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Selective organisation of processing. Rests on A1 functional signalling, whose optional gating, modulation and routing it requires.",
+      "order": 10,
+      "notes": "Attention\n*Selective organisation of processing.* (Table 3)\n\n- **Highest-order requirement:** A1 Functional signalling\n- **Defining:** A1 Functional signalling\n- **Also requires, through A1 Functional signalling:** Gate and filter, Modulate, Route (optional for A1, required here)\n- **Supports:** B1 Retention, B2 Inference, B3 Regulation\n- **Engine operations required:** Receive and access, Transmit, Gate and filter, Modulate, Route\n- **Used by:** Perception, Reasoning, Consciousness (supports)\n- **Basis:** Table 3: 'Reception/access and selective gating, filtering, modulation and prioritisation; possible goal guidance'. These are SOIPS engine operations. Because composite capabilities reach the engine only through Dimension A, they are supplied through A1, the form whose organised signalling can be gated, modulated and routed [JC]. Goal guidance maps to B3 Regulation as a support. Retention (sustained history) and inference (evaluation of relevance) are added as supports because both can inform what is prioritised [JC]; Table 3 does not list them.\n- **Alternative reading:** Drawing these operations from A4 instead would make attention indistinguishable from context-sensitive organisation. Basing attention on A1 keeps them distinct, consistent with §5's statement that attention is not a universal prerequisite of consciousness.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 85,
+        "y": 262
+      },
+      "width": 120,
+      "height": 42
+    },
+    {
+      "id": "MEM",
+      "label": "Memory",
+      "shortLabel": "Memory",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Retention and usable retrieval. Reaches Dimension A through B1; selective retrieval would use A1’s gating.",
+      "order": 11,
+      "notes": "Memory\n*Retention and usable retrieval.* (Table 3)\n\n- **Highest-order requirement:** B1 Retention\n- **Defining:** B1 Retention\n- **Supports:** A1 Functional signalling\n- **Engine operations required:** Receive and access, Transform\n- **Used by:** Reasoning, Awareness, Planning, Consciousness (supports)\n- **Basis:** Table 3: 'Retained states or representations; selective retrieval where developed'. Retention is defining. Retrieval needs Receive and access, supplied through B1's A2. Selective retrieval ('where developed') maps to A1's gating as a support [JC].",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 255,
+        "y": 262
+      },
+      "width": 120,
+      "height": 42
+    },
+    {
+      "id": "LEA",
+      "label": "Learning",
+      "shortLabel": "Learning",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Experience-dependent change with retained consequences. Reaches Dimension A through B1; modifiable signalling or models add A1 or A3.",
+      "order": 12,
+      "notes": "Learning\n*Experience-dependent change with retained consequences.* (Table 3)\n\n- **Highest-order requirement:** B1 Retention\n- **Defining:** B1 Retention\n- **Supports:** A1 Functional signalling, A3 Relational models\n- **Engine operations required:** Receive and access, Transform\n- **Used by:** Flexible cognition (one of); Prediction, Agency (supports)\n- **Basis:** 'Retained consequences' makes B1 defining. Table 3's 'Modifiable signalling, connections, representations or models' lists where the change can sit. Representations are already present through B1's A2, so the remaining options are supports: modifiable signalling or connections (A1, which supplies Modulate) and modifiable models (A3) [JC].",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 425,
+        "y": 262
+      },
+      "width": 120,
+      "height": 42
+    },
+    {
+      "id": "EVA",
+      "label": "Evaluation",
+      "shortLabel": "Evaluation",
+      "code": "",
+      "categoryId": "cap",
+      "description": "Assessing information against criteria or possible outcomes, through comparison and inference. Reaches Dimension A through B2.",
+      "order": 13,
+      "notes": "Evaluation\n*Assessing information against criteria or possible outcomes.* (Table 3)\n\n- **Highest-order requirement:** B2 Inference\n- **Defining:** B2 Inference\n- **Supports:** B3 Regulation\n- **Engine operations required:** Receive and access, Transform, Combine and integrate\n- **Used by:** Awareness, Flexible cognition (one of); Monitoring, Reasoning, Elementary cognition (supports)\n- **Basis:** Table 3: 'Comparison and inference; goals, preferences or regulation where relevant'. Inference is defining. Comparison maps to Combine and integrate, supplied through B2's A2. Goals, preferences or regulation map to B3 as a support.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 595,
+        "y": 262
+      },
+      "width": 120,
+      "height": 42
+    },
+    {
+      "id": "B1",
+      "label": "B1 Retention",
+      "shortLabel": "B1 Retention",
+      "code": "B1",
+      "categoryId": "dimB",
+      "description": "Preservation of information about previous states or events in a form that remains potentially available for later processing. A2 supplies the receive and access and transform it needs.",
+      "order": 14,
+      "notes": "B1 Retention\n*Preservation of information about previous states or events in a form that remains potentially available for later processing or behaviour.* (§3)\n\n- **Highest-order requirement:** A2 Representations\n- **Defining:** A2 Representations\n- **Engine operations required:** Receive and access, Transform\n- **Used by:** Memory, Learning (defining); Attention, Monitoring, Prediction (supports)\n- **Basis:** Retention needs a state change that records the information (Transform) and remains accessible to later processing (Receive and access); A2 supplies both [JC]. §3 requires the trace to stay functionally available: 'Simply maintaining a physical state does not constitute functional retention unless that state can influence later processing.'",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 229.84,
+        "y": 332
+      },
+      "width": 110,
+      "height": 42
+    },
+    {
+      "id": "B2",
+      "label": "B2 Inference",
+      "shortLabel": "B2 Inference",
+      "code": "B2",
+      "categoryId": "dimB",
+      "description": "Derivation of a usable conclusion, estimate or implication from available information and its relationships. A2 supplies transform, and combine and integrate (optional for A2, required here). Relational models can support inference (§3).",
+      "order": 15,
+      "notes": "B2 Inference\n*Derivation of a usable conclusion, estimate or implication from available information and its relationships.* (§3)\n\n- **Highest-order requirement:** A2 Representations\n- **Defining:** A2 Representations\n- **Also requires, through A2 Representations:** Combine and integrate (optional for A2, required here)\n- **Supports:** A3 Relational models\n- **Engine operations required:** Receive and access, Transform, Combine and integrate\n- **Used by:** Evaluation, Reasoning, Prediction, Planning (defining); Elementary cognition, Flexible cognition (one of); Attention, Perception, Monitoring, Awareness, Agency (supports)\n- **Basis:** Deriving a conclusion combines information and transforms it. A2 supplies Transform and, when inference uses it, Combine and integrate [JC]. §3: 'representations and models can support inference or regulation', so A2 is defining and A3 is a support.\n- **Alternative reading:** 'From available information and its relationships' could make A3 defining. Under that reading the configuration in Figure 2A is no longer minimal (S1.10).",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 383.724,
+        "y": 332
+      },
+      "width": 110,
+      "height": 42
+    },
+    {
+      "id": "B3",
+      "label": "B3 Regulation",
+      "shortLabel": "B3 Regulation",
+      "code": "B3",
+      "categoryId": "dimB",
+      "description": "Information-guided influence organised around maintaining, restoring or steering an outcome. A2 supplies receive and access and transform; A1 transmits the influence (§3: functional signalling can contribute to regulation). Relational models can support regulation.",
+      "order": 16,
+      "notes": "B3 Regulation\n*Information-guided influence organised around maintaining, restoring or steering an outcome or condition.* (§3)\n\n- **Highest-order requirement:** A1 and A2\n- **Defining:** A1 Functional signalling, A2 Representations\n- **Supports:** A3 Relational models\n- **Engine operations required:** Receive and access, Transmit, Transform\n- **Used by:** Agency (defining); Awareness, Elementary cognition (one of); Attention, Evaluation, Monitoring, Planning (supports)\n- **Basis:** The regulated condition must be represented (A2: Receive and access, Transform) and the influence carried to where it acts (Transmit, supplied by A1) [JC]. §3 supports both links: functional signalling 'can coordinate responses and contribute to regulation', and representations and models 'can support inference or regulation'. A3 is therefore a support.\n- **Alternative reading:** If regulation does not require transmission, A1 becomes a support. Regulation then becomes as cheap as monitoring or inference, adding two further 12-element configurations; Figure 2A remains minimal (S1.10).",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 537.2,
+        "y": 332
+      },
+      "width": 110,
+      "height": 42
+    },
+    {
+      "id": "A1",
+      "label": "A1 Functional signalling",
+      "shortLabel": "A1 Functional signalling",
+      "code": "A1",
+      "categoryId": "dimA",
+      "description": "Organised signals that contribute to system functions. Signals can also be routed, gated and modulated; these are optional for A1 but attention requires them.",
+      "order": 17,
+      "notes": "A1 Functional signalling\n*Organised signals that contribute to system functions.* (Table 2)\n\n- **Defining operations:** Receive and access, Transmit\n- **Optional operations:** Route, Gate and filter, Modulate\n- **Can build on:** none\n- **Can be built on by:** A2 (drawn); A3, A4\n- **Supplies operations optional for A1 but required by:** Attention (Gate and filter, Modulate, Route)\n- **Used by:** B3 Regulation, Attention (defining); Memory, Learning (supports)\n- **Basis:** Signals must be received and carried between components, so Receive and access and Transmit are defining [JC]. Organised signalling can also be routed, gated and modulated; these operations are optional for A1 in general but are required when attention uses A1 [JC]. §3 distinguishes functional signalling from the engine's elementary communication operations because signalling is organised to serve an identifiable function, and notes that functional signalling 'can coordinate responses and contribute to regulation'.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 153,
+        "y": 414
+      },
+      "width": 100,
+      "height": 42
+    },
+    {
+      "id": "A2",
+      "label": "A2 Representations",
+      "shortLabel": "A2 Representations",
+      "code": "A2",
+      "categoryId": "dimA",
+      "description": "Usable internal states carrying information about particular targets. Integration is optional for A2 but required when B2 or perception use it.",
+      "order": 18,
+      "notes": "A2 Representations\n*Usable internal states carrying information about particular targets.* (Table 2)\n\n- **Defining operations:** Receive and access, Transform\n- **Optional operations:** Combine and integrate\n- **Can build on:** A1\n- **Can be built on by:** A3 (drawn); A4 directly within consciousness (drawn)\n- **Supplies operations optional for A2 but required by:** B2 Inference (Combine and integrate); Perception (Combine and integrate)\n- **Used by:** B1 Retention, B2 Inference, B3 Regulation, Perception, Monitoring, Awareness, Elementary cognition (defining)\n- **Basis:** Information about a target must reach the system and be encoded as a usable state, so Receive and access and Transform are defining [JC]. Combination is optional for A2 in general but is required when inference or perception use it [JC]. §3 describes a representation as going further than functional signalling, so A2 can build on A1; it can also carry information about the system's own state.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 307.02,
+        "y": 414
+      },
+      "width": 100,
+      "height": 42
+    },
+    {
+      "id": "A3",
+      "label": "A3 Relational models",
+      "shortLabel": "A3 Relational models",
+      "code": "A3",
+      "categoryId": "dimA",
+      "description": "Relationships among informative states or representations. Can build on A1 signals as well as A2 representations.",
+      "order": 19,
+      "notes": "A3 Relational models\n*Relationships among informative states or representations.* (Table 2)\n\n- **Defining operations:** Combine and integrate\n- **Can build on:** A2 (drawn); A1\n- **Can be built on by:** A4 (drawn)\n- **Used by:** Prediction, Planning, Agency (defining); B2 Inference, B3 Regulation, Learning, Reasoning (supports)\n- **Basis:** Relating informative states is a combination operation, so Combine and integrate is defining [JC]. Because Table 2 allows the related states to be representations or other informative states, A3 can build on A2 or on A1 signals; neither is required. Only the adjacent A2 → A3 link is drawn.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 460.36,
+        "y": 414
+      },
+      "width": 100,
+      "height": 42
+    },
+    {
+      "id": "A4",
+      "label": "A4 Context-sensitive informational organisation",
+      "shortLabel": "A4 Context-sensitive",
+      "code": "A4",
+      "categoryId": "dimA",
+      "description": "Functional signalling, representations, models and processing pathways coordinated according to context. Can build on A1, A2 or A3; only the adjacent link is drawn.",
+      "order": 20,
+      "notes": "A4 Context-sensitive informational organisation\n*Functional signalling, representations, models and processing pathways coordinated according to context.* (Table 2)\n\n- **Defining operations:** Gate and filter, Route\n- **Optional operations:** Modulate, Combine and integrate\n- **Can build on:** A3 (drawn); A1, A2; A2 directly within consciousness (drawn)\n- **Can be built on by:** none\n- **Used by:** Flexible cognition (defining)\n- **Basis:** Coordinating processing pathways according to context requires selecting influences (Gate and filter) and directing them (Route) [JC]; modulation and combination are optional [JC]. Table 2 and §3 name functional signalling, representations and models among the things A4 coordinates, so A4 can build on A1, A2 or A3. None is required, consistent with §3: the forms 'need not appear in a fixed sequence'. Only the adjacent A3 → A4 link is drawn. Within consciousness, A4 is shown building directly on A2, because §5's defining relation requires awareness-related information, held in representations, to participate in flexible cognition, whose architecture is A4.",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 614.04,
+        "y": 414
+      },
+      "width": 100,
+      "height": 42
+    },
+    {
+      "id": "RA",
+      "label": "Receive and access",
+      "shortLabel": "Receive and access",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Makes a state difference available to a process.",
+      "order": 21,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 48.57142857142857,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    },
+    {
+      "id": "TM",
+      "label": "Transmit",
+      "shortLabel": "Transmit",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Carries informational influence between components or locations.",
+      "order": 22,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 145.7142857142857,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    },
+    {
+      "id": "TF",
+      "label": "Transform",
+      "shortLabel": "Transform",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Uses information to change a subsequent state or output.",
+      "order": 23,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 242.85714285714286,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    },
+    {
+      "id": "CI",
+      "label": "Combine and integrate",
+      "shortLabel": "Combine and integrate",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Allows several informational influences to contribute jointly.",
+      "order": 24,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 340,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    },
+    {
+      "id": "GF",
+      "label": "Gate and filter",
+      "shortLabel": "Gate and filter",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Selects, admits or suppresses influences.",
+      "order": 25,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 437.14285714285717,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    },
+    {
+      "id": "MO",
+      "label": "Modulate",
+      "shortLabel": "Modulate",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Changes the strength or effect of an influence.",
+      "order": 26,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 534.2857142857142,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    },
+    {
+      "id": "RO",
+      "label": "Route",
+      "shortLabel": "Route",
+      "code": "",
+      "categoryId": "eng",
+      "description": "Directs influence through particular pathways.",
+      "order": 27,
+      "notes": "Table 1; Supplementary S1 §S1.5",
+      "references": [
+        "Potas (2026), Tables 1–3; Supplementary S1"
+      ],
+      "position": {
+        "x": 631.4285714285714,
+        "y": 494
+      },
+      "width": 88,
+      "height": 42
+    }
+  ],
+  "relations": [
+    {
+      "id": "r001",
+      "from": "A1",
+      "to": "RA",
+      "kind": "defining",
+      "explanation": "Signals must be received [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Signals must be received [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r002",
+      "from": "A1",
+      "to": "TM",
+      "kind": "defining",
+      "explanation": "Signals are carried between components [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Signals are carried between components [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r003",
+      "from": "A1",
+      "to": "RO",
+      "kind": "supports",
+      "explanation": "Organised signalling can be routed [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Organised signalling can be routed [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r004",
+      "from": "A1",
+      "to": "GF",
+      "kind": "supports",
+      "explanation": "Organised signalling can be gated [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Organised signalling can be gated [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r005",
+      "from": "A1",
+      "to": "MO",
+      "kind": "supports",
+      "explanation": "Organised signalling can be modulated [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Organised signalling can be modulated [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r006",
+      "from": "A2",
+      "to": "RA",
+      "kind": "defining",
+      "explanation": "Information about a target must reach the system [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Information about a target must reach the system [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r007",
+      "from": "A2",
+      "to": "TF",
+      "kind": "defining",
+      "explanation": "Encoding as a usable state [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Encoding as a usable state [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r008",
+      "from": "A2",
+      "to": "CI",
+      "kind": "supports",
+      "explanation": "States may combine several inputs [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "States may combine several inputs [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r009",
+      "from": "A3",
+      "to": "CI",
+      "kind": "defining",
+      "explanation": "Relating informative states combines them [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Relating informative states combines them [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r010",
+      "from": "A4",
+      "to": "GF",
+      "kind": "defining",
+      "explanation": "Context-dependent selection [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Context-dependent selection [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r011",
+      "from": "A4",
+      "to": "RO",
+      "kind": "defining",
+      "explanation": "Context-dependent direction of pathways [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Context-dependent direction of pathways [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r012",
+      "from": "A4",
+      "to": "MO",
+      "kind": "supports",
+      "explanation": "Context can change strength of influence [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Context can change strength of influence [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r013",
+      "from": "A4",
+      "to": "CI",
+      "kind": "supports",
+      "explanation": "Combining coordinated structures [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Combining coordinated structures [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r014",
+      "from": "A2",
+      "to": "A1",
+      "kind": "canBuildOn",
+      "explanation": "§3: a representation 'goes further' than functional signalling",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§3: a representation 'goes further' than functional signalling"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "can build on"
+      }
+    },
+    {
+      "id": "r015",
+      "from": "A3",
+      "to": "A2",
+      "kind": "canBuildOn",
+      "explanation": "Table 2: relationships among informative states or representations",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 2: relationships among informative states or representations"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "can build on"
+      }
+    },
+    {
+      "id": "r016",
+      "from": "A4",
+      "to": "A3",
+      "kind": "canBuildOn",
+      "explanation": "Table 2: A4 coordinates signalling, representations, models and pathways",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 2: A4 coordinates signalling, representations, models and pathways"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "can build on"
+      }
+    },
+    {
+      "id": "r017",
+      "from": "A4",
+      "to": "A2",
+      "kind": "canBuildOn",
+      "condition": {
+        "allOf": [
+          "CON"
+        ]
+      },
+      "explanation": "§5: awareness-related information participates in flexible cognition, whose architecture is A4",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: awareness-related information participates in flexible cognition, whose architecture is A4"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "can build on (within consciousness)"
+      }
+    },
+    {
+      "id": "r018",
+      "from": "B1",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Supplies Transform and Receive and access [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Supplies Transform and Receive and access [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r019",
+      "from": "B2",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Supplies Transform [JC]; §3: representations can support inference",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Supplies Transform [JC]; §3: representations can support inference"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r020",
+      "from": "B2",
+      "to": "CI",
+      "kind": "requiredVia",
+      "via": "A2",
+      "explanation": "Deriving conclusions combines information [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Deriving conclusions combines information [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "required through an A form (through A2)"
+      }
+    },
+    {
+      "id": "r021",
+      "from": "B2",
+      "to": "A3",
+      "kind": "supports",
+      "explanation": "§3: models can support inference",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§3: models can support inference"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r022",
+      "from": "B3",
+      "to": "A1",
+      "kind": "defining",
+      "explanation": "Supplies Transmit [JC]; §3: functional signalling can contribute to regulation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Supplies Transmit [JC]; §3: functional signalling can contribute to regulation"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r023",
+      "from": "B3",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Supplies Receive and access and Transform [JC]; §3: representations can support regulation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Supplies Receive and access and Transform [JC]; §3: representations can support regulation"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r024",
+      "from": "B3",
+      "to": "A3",
+      "kind": "supports",
+      "explanation": "§3: models can support regulation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§3: models can support regulation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r025",
+      "from": "ATT",
+      "to": "A1",
+      "kind": "defining",
+      "explanation": "Table 3 operations supplied through A1 [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3 operations supplied through A1 [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r026",
+      "from": "ATT",
+      "to": "GF",
+      "kind": "requiredVia",
+      "via": "A1",
+      "explanation": "Table 3: selective gating, filtering",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: selective gating, filtering"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "required through an A form (through A1)"
+      }
+    },
+    {
+      "id": "r027",
+      "from": "ATT",
+      "to": "MO",
+      "kind": "requiredVia",
+      "via": "A1",
+      "explanation": "Table 3: modulation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: modulation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "required through an A form (through A1)"
+      }
+    },
+    {
+      "id": "r028",
+      "from": "ATT",
+      "to": "RO",
+      "kind": "requiredVia",
+      "via": "A1",
+      "explanation": "Table 3: prioritisation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: prioritisation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "required through an A form (through A1)"
+      }
+    },
+    {
+      "id": "r029",
+      "from": "ATT",
+      "to": "B1",
+      "kind": "supports",
+      "explanation": "Retained history can inform prioritisation [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Retained history can inform prioritisation [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r030",
+      "from": "ATT",
+      "to": "B2",
+      "kind": "supports",
+      "explanation": "Evaluation of relevance can inform prioritisation [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Evaluation of relevance can inform prioritisation [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r031",
+      "from": "ATT",
+      "to": "B3",
+      "kind": "supports",
+      "explanation": "Table 3: possible goal guidance",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: possible goal guidance"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r032",
+      "from": "MEM",
+      "to": "B1",
+      "kind": "defining",
+      "explanation": "Table 3: retention",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: retention"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r033",
+      "from": "MEM",
+      "to": "A1",
+      "kind": "supports",
+      "explanation": "Table 3: selective retrieval where developed (gating) [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: selective retrieval where developed (gating) [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r034",
+      "from": "LEA",
+      "to": "B1",
+      "kind": "defining",
+      "explanation": "Table 3: retained consequences",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: retained consequences"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r035",
+      "from": "LEA",
+      "to": "A1",
+      "kind": "supports",
+      "explanation": "Table 3: modifiable signalling or connections",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: modifiable signalling or connections"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r036",
+      "from": "LEA",
+      "to": "A3",
+      "kind": "supports",
+      "explanation": "Table 3: modifiable models",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: modifiable models"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r037",
+      "from": "EVA",
+      "to": "B2",
+      "kind": "defining",
+      "explanation": "Table 3: comparison and inference",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: comparison and inference"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r038",
+      "from": "EVA",
+      "to": "B3",
+      "kind": "supports",
+      "explanation": "Table 3: goals, preferences or regulation where relevant",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: goals, preferences or regulation where relevant"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r039",
+      "from": "PER",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Table 3: representations",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: representations"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r040",
+      "from": "PER",
+      "to": "CI",
+      "kind": "requiredVia",
+      "via": "A2",
+      "explanation": "Table 3: integration",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: integration"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "required through an A form (through A2)"
+      }
+    },
+    {
+      "id": "r041",
+      "from": "PER",
+      "to": "B2",
+      "kind": "supports",
+      "explanation": "Table 3: inference where useful",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: inference where useful"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r042",
+      "from": "PER",
+      "to": "ATT",
+      "kind": "supports",
+      "explanation": "Table 3: attention where useful",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: attention where useful"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r043",
+      "from": "MON",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Table 3: information about the monitored condition [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: information about the monitored condition [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r044",
+      "from": "MON",
+      "to": "EVA",
+      "kind": "supports",
+      "explanation": "Table 3: potentially comparison",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: potentially comparison"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r045",
+      "from": "MON",
+      "to": "B3",
+      "kind": "supports",
+      "explanation": "Table 3: potentially regulation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: potentially regulation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r046",
+      "from": "MON",
+      "to": "B1",
+      "kind": "supports",
+      "explanation": "Table 3: retention may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: retention may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r047",
+      "from": "MON",
+      "to": "B2",
+      "kind": "supports",
+      "explanation": "Table 3: inference may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: inference may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r048",
+      "from": "REA",
+      "to": "B2",
+      "kind": "defining",
+      "explanation": "Table 3: inference",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: inference"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r049",
+      "from": "REA",
+      "to": "A3",
+      "kind": "supports",
+      "explanation": "Table 3: representations or models (representations already present through B2)",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: representations or models (representations already present through B2)"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r050",
+      "from": "REA",
+      "to": "EVA",
+      "kind": "supports",
+      "explanation": "Table 3: evaluation may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: evaluation may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r051",
+      "from": "REA",
+      "to": "ATT",
+      "kind": "supports",
+      "explanation": "Table 3: attention may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: attention may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r052",
+      "from": "REA",
+      "to": "MEM",
+      "kind": "supports",
+      "explanation": "Table 3: memory may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: memory may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r053",
+      "from": "PRE",
+      "to": "B2",
+      "kind": "defining",
+      "explanation": "Table 3: inference",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: inference"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r054",
+      "from": "PRE",
+      "to": "A3",
+      "kind": "defining",
+      "explanation": "Table 3: temporal or causal relationships, which are A3 under Table 2 [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: temporal or causal relationships, which are A3 under Table 2 [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r055",
+      "from": "PRE",
+      "to": "B1",
+      "kind": "supports",
+      "explanation": "Table 3: sometimes with retention",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: sometimes with retention"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r056",
+      "from": "PRE",
+      "to": "LEA",
+      "kind": "supports",
+      "explanation": "Table 3: prior learning where useful",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: prior learning where useful"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r057",
+      "from": "AWA",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Table 3: informative states",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: informative states"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r058",
+      "from": "AWA",
+      "to": "MON",
+      "kind": "oneOf",
+      "groupId": "AWA-alternatives",
+      "explanation": "Table 3: available to monitoring",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: available to monitoring"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r059",
+      "from": "AWA",
+      "to": "EVA",
+      "kind": "oneOf",
+      "groupId": "AWA-alternatives",
+      "explanation": "Table 3: available to evaluation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: available to evaluation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r060",
+      "from": "AWA",
+      "to": "B3",
+      "kind": "oneOf",
+      "groupId": "AWA-alternatives",
+      "explanation": "Table 3: available to response [JC: response mapped to regulation]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: available to response [JC: response mapped to regulation]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r061",
+      "from": "AWA",
+      "to": "PER",
+      "kind": "supports",
+      "explanation": "§5: awareness can concern sensory conditions organised by perception [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: awareness can concern sensory conditions organised by perception [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r062",
+      "from": "AWA",
+      "to": "MEM",
+      "kind": "supports",
+      "explanation": "§5: remembered conditions",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: remembered conditions"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r063",
+      "from": "AWA",
+      "to": "B2",
+      "kind": "supports",
+      "explanation": "§5: inferred conditions",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: inferred conditions"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r064",
+      "from": "ECOG",
+      "to": "A2",
+      "kind": "defining",
+      "explanation": "Table 3: representations [JC: see entry]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: representations [JC: see entry]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r065",
+      "from": "ECOG",
+      "to": "B2",
+      "kind": "oneOf",
+      "groupId": "ECOG-alternatives",
+      "explanation": "§5: derive conclusions",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: derive conclusions"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r066",
+      "from": "ECOG",
+      "to": "B3",
+      "kind": "oneOf",
+      "groupId": "ECOG-alternatives",
+      "explanation": "§5: guide responses",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: guide responses"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r067",
+      "from": "ECOG",
+      "to": "PER",
+      "kind": "supports",
+      "explanation": "Table 3: possibly perception",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: possibly perception"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r068",
+      "from": "ECOG",
+      "to": "EVA",
+      "kind": "supports",
+      "explanation": "Table 3: possibly evaluation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: possibly evaluation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r069",
+      "from": "PLA",
+      "to": "B2",
+      "kind": "defining",
+      "explanation": "Table 3: inference about actions and consequences",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: inference about actions and consequences"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r070",
+      "from": "PLA",
+      "to": "A3",
+      "kind": "defining",
+      "explanation": "Table 3: models of alternatives",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: models of alternatives"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r071",
+      "from": "PLA",
+      "to": "B3",
+      "kind": "supports",
+      "explanation": "Table 3: potentially regulation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: potentially regulation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r072",
+      "from": "PLA",
+      "to": "PRE",
+      "kind": "supports",
+      "explanation": "Table 3: prediction where useful",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: prediction where useful"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r073",
+      "from": "PLA",
+      "to": "MEM",
+      "kind": "supports",
+      "explanation": "Table 3: memory where useful",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: memory where useful"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r074",
+      "from": "AGE",
+      "to": "B3",
+      "kind": "defining",
+      "explanation": "Information-guided action [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Information-guided action [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r075",
+      "from": "AGE",
+      "to": "A3",
+      "kind": "defining",
+      "explanation": "Table 3: links between states, actions and consequences",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: links between states, actions and consequences"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r076",
+      "from": "AGE",
+      "to": "B2",
+      "kind": "supports",
+      "explanation": "Response selection [JC]",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Response selection [JC]"
+      ],
+      "judgement": true,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r077",
+      "from": "AGE",
+      "to": "PLA",
+      "kind": "supports",
+      "explanation": "Table 3: possible planning",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: possible planning"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r078",
+      "from": "AGE",
+      "to": "LEA",
+      "kind": "supports",
+      "explanation": "Table 3: possible learning",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: possible learning"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r079",
+      "from": "FCOG",
+      "to": "A4",
+      "kind": "defining",
+      "explanation": "Table 3: context-sensitive organisation",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: context-sensitive organisation"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r080",
+      "from": "FCOG",
+      "to": "LEA",
+      "kind": "oneOf",
+      "groupId": "FCOG-alternatives",
+      "explanation": "Table 3: learned functions",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: learned functions"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r081",
+      "from": "FCOG",
+      "to": "B2",
+      "kind": "oneOf",
+      "groupId": "FCOG-alternatives",
+      "explanation": "Table 3: inferential functions",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: inferential functions"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r082",
+      "from": "FCOG",
+      "to": "EVA",
+      "kind": "oneOf",
+      "groupId": "FCOG-alternatives",
+      "explanation": "Table 3: evaluative functions",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3: evaluative functions"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "at least one of"
+      }
+    },
+    {
+      "id": "r083",
+      "from": "FCOG",
+      "to": "ECOG",
+      "kind": "supports",
+      "explanation": "§5: elementary cognition can contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: elementary cognition can contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r084",
+      "from": "CON",
+      "to": "AWA",
+      "kind": "defining",
+      "explanation": "Table 3; §5 working definition",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3; §5 working definition"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r085",
+      "from": "CON",
+      "to": "FCOG",
+      "kind": "defining",
+      "explanation": "Table 3; §5 working definition",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "Table 3; §5 working definition"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "defining"
+      }
+    },
+    {
+      "id": "r086",
+      "from": "CON",
+      "to": "ATT",
+      "kind": "supports",
+      "explanation": "§5: may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r087",
+      "from": "CON",
+      "to": "MEM",
+      "kind": "supports",
+      "explanation": "§5: may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r088",
+      "from": "CON",
+      "to": "MON",
+      "kind": "supports",
+      "explanation": "§5: may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r089",
+      "from": "CON",
+      "to": "REA",
+      "kind": "supports",
+      "explanation": "§5: may contribute",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: may contribute"
+      ],
+      "judgement": false,
+      "provenance": {
+        "sourceRelation": "supports"
+      }
+    },
+    {
+      "id": "r090",
+      "from": "FCOG",
+      "to": "AWA",
+      "kind": "participation",
+      "condition": {
+        "allOf": [
+          "CON"
+        ]
+      },
+      "explanation": "§5: participation of awareness-related information in flexible cognition",
+      "evidence": [
+        "Supplementary S1 §S1.11",
+        "§5: participation of awareness-related information in flexible cognition"
+      ],
+      "judgement": false,
+      "context": "Awareness-related information participating in flexible cognition; structural assumption, not empirical proof.",
+      "provenance": {
+        "sourceRelation": "participation (defining relation)"
+      }
+    }
+  ],
+  "view": {
+    "defaultRoot": "CON",
+    "visibleRelations": [
+      "defining",
+      "oneOf",
+      "supports",
+      "requiredVia",
+      "canBuildOn",
+      "participation"
+    ],
+    "zoom": 1,
+    "includeCredit": true
+  },
+  "analysisSettings": {
+    "maxStates": 50000,
+    "maxConfigurations": 1000,
+    "timeoutMs": 1500
+  }
+}
