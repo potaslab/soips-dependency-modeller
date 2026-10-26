@@ -1,6 +1,7 @@
 import {chromium,firefox,type Page} from 'playwright';import assert from 'node:assert/strict';import fs from 'node:fs/promises';import path from 'node:path';import {pathToFileURL} from 'node:url';
 import {REFERENCE} from '../src/models/io';
 import {small,rel} from './fixtures';
+import {KINDS} from '../src/models/schema';
 const root=path.resolve(import.meta.dirname,'..'),out=path.join(root,'test-results');await fs.mkdir(out,{recursive:true});
 assert.equal(await fs.readFile(path.join(root,'dist/index.html'),'utf8'),await fs.readFile(path.join(root,'dist/SOIPS-Dependency-Modeller.html'),'utf8'),'Hosted and downloadable distributions must be identical');
 const footerText='SOIPS Dependency Modeller · J. R. Potas (2026). Dependency configurations reflect the assumptions specified in each model.';
@@ -10,6 +11,36 @@ const results:Record<string,unknown>[]=[];
 async function waitAnalysis(page:Page){await page.waitForFunction(()=>!document.querySelector('#analysis')?.textContent?.includes('Calculating in the background'));}
 async function saveDownload(page:Page,buttonName:string,name:string){const pending=page.waitForEvent('download');await page.getByRole('button',{name:buttonName,exact:true}).click();const file=await pending;const dest=path.join(out,name);await file.saveAs(dest);return dest;}
 async function openFile(page:Page,file:string){const data=JSON.parse(await fs.readFile(file,'utf8'));const chooser=page.waitForEvent('filechooser');await page.getByRole('button',{name:'Open JSON',exact:true}).click();await (await chooser).setFiles(file);if(Array.isArray(data.nodes)&&data.metadata)await page.waitForFunction(([count,title])=>document.querySelectorAll('#graph [data-node]').length===count&&document.querySelector('#identity')?.textContent?.includes(title),[data.nodes.length,data.metadata.title] as [number,string]);}
+async function checkLegendStyles(page:Page,scope:string){
+  const container=page.locator(scope);assert.equal(await container.locator('[data-legend-edge]').count(),KINDS.length);
+  for(const kind of KINDS){
+    const sample=container.locator(`[data-legend-edge="${kind}"]`);let edge;
+    for(const relation of REFERENCE.relations.filter(r=>r.kind===kind)){
+      const candidate=page.locator(`[data-edge="${relation.id}"]`);
+      if(await candidate.count()&&Number(await candidate.getAttribute('opacity'))>.9){edge=candidate;break;}
+    }
+    assert.ok(edge,`${kind}: expected a highlighted diagram edge`);
+    for(const attribute of ['fill','stroke','stroke-width','stroke-linecap','stroke-dasharray'])assert.equal(await sample.getAttribute(attribute),await edge.getAttribute(attribute),`${kind}: ${attribute}`);
+    assert.equal(Number(await sample.getAttribute('opacity')),Number(await edge.getAttribute('opacity')));
+    assert.equal(await sample.evaluate(p=>(p as SVGPathElement).getTotalLength()),48);
+    assert.equal(!!(await sample.getAttribute('marker-end')),kind==='canBuildOn');
+  }
+}
+async function captureLegend(page:Page,name:string){
+  const viewport=page.viewportSize()!;
+  for(const [label,width] of [['desktop',1440],['mobile',390],['narrow',320]] as const){
+    await page.setViewportSize({width,height:1100});
+    const legend=page.locator('#legend'),bounds=await legend.boundingBox();assert.ok(bounds);
+    for(const item of await legend.locator('.legend-item').all()){
+      const box=await item.boundingBox();assert.ok(box);assert.ok(box.x>=bounds.x-1&&box.x+box.width<=bounds.x+bounds.width+1,`${label}: item must fit within legend`);
+      const sample=item.locator('svg');if(await sample.count()){
+        const svg=await sample.boundingBox(),text=await item.locator('.legend-label').boundingBox();assert.ok(svg&&text);assert.equal(svg.width,60);assert.ok(svg.x+svg.width<=text.x+1,`${label}: sample must not overlap label`);
+      }
+    }
+    await legend.screenshot({path:path.join(out,`${name}-legend-${label}.png`)});
+  }
+  await page.setViewportSize(viewport);
+}
 for(const [name,type] of [['chromium',chromium],['firefox',firefox]] as const){
   const browser=await type.launch({headless:true});const context=await browser.newContext({viewport:{width:1440,height:1100},offline:true,acceptDownloads:true});const page=await context.newPage();
   const errors:string[]=[],remote:string[]=[],alerts:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(/^https?:/.test(r.url()))remote.push(r.url());});page.on('dialog',async d=>{if(d.type()==='alert')alerts.push(d.message());await d.accept();});
@@ -23,14 +54,14 @@ for(const [name,type] of [['chromium',chromium],['firefox',firefox]] as const){
   try{
     await page.goto(pathToFileURL(path.join(root,'dist/SOIPS-Dependency-Modeller.html')).href);await page.getByRole('heading',{name:'SOIPS Dependency Modeller',exact:true}).waitFor();assert.equal(await page.locator('#graph [data-node]').count(),28);
     assert.equal(await page.locator('footer').innerText(),footerText);
-    await page.getByRole('button',{name:'About / Cite / Help',exact:true}).click();assert.ok((await page.locator('dialog').innerText()).includes(aboutText));assert.ok((await page.locator('dialog').innerText()).includes(licenceText));assert.doesNotMatch(await page.locator('dialog').innerText(),/phenomenal experience|licences.*await author approval/);assert.equal(await page.locator('dialog').getByRole('link',{name:'MIT software licence',exact:true}).getAttribute('href'),'https://opensource.org/license/mit');assert.equal(await page.locator('dialog').getByRole('link',{name:'SOIPS model licence (CC BY 4.0)',exact:true}).getAttribute('href'),'https://creativecommons.org/licenses/by/4.0/legalcode');assert.match(await page.locator('dialog').innerText(),/Source publication \/ DOI: Pending/);await page.getByRole('button',{name:'Close',exact:true}).click();
+    await page.getByRole('button',{name:'About / Cite / Help',exact:true}).click();assert.ok((await page.locator('dialog').innerText()).includes(aboutText));assert.ok((await page.locator('dialog').innerText()).includes(licenceText));assert.doesNotMatch(await page.locator('dialog').innerText(),/phenomenal experience|licences.*await author approval/);assert.equal(await page.locator('dialog').getByRole('link',{name:'MIT software licence',exact:true}).getAttribute('href'),'https://opensource.org/license/mit');assert.equal(await page.locator('dialog').getByRole('link',{name:'SOIPS model licence (CC BY 4.0)',exact:true}).getAttribute('href'),'https://creativecommons.org/licenses/by/4.0/legalcode');assert.ok((await page.locator('dialog').innerText()).includes('Please cite: '+REFERENCE.metadata.citation));assert.ok((await page.locator('dialog').innerText()).includes('Source publication / DOI: https://doi.org/10.31234/osf.io/jv4ah_v1'));assert.equal(await page.locator('dialog').getByRole('link',{name:'Open model source / publication',exact:true}).getAttribute('href'),'https://doi.org/10.31234/osf.io/jv4ah_v1');await page.getByRole('button',{name:'Close',exact:true}).click();
     const original=await saveDownload(page,'Save JSON',`${name}-reference.json`);assert.deepEqual(JSON.parse(await fs.readFile(original,'utf8')),REFERENCE);
     await page.getByText('Full source / interpretation notes',{exact:true}).click();const notes=page.locator('.source-notes');assert.ok(await notes.locator('ul > li').count()>=7);assert.equal(await notes.locator('strong').first().innerText(),'Highest-order requirement:');assert.match(await notes.locator('em').innerText(),/Awareness-related information/);assert.ok(!(await notes.innerText()).includes('**'));await notes.screenshot({path:path.join(out,`${name}-formatted-notes.png`)});await page.getByText('Full source / interpretation notes',{exact:true}).click();
     await page.getByRole('button',{name:'Calculate minimal configurations',exact:true}).click();await waitAnalysis(page);assert.match(await page.locator('#analysis').innerText(),/12 nodes · 3 tied/);await page.screenshot({path:path.join(out,`${name}-minimum.png`),fullPage:true});
     const workerChecks=await page.evaluate(()=>(window as any).__analysisWorkerChecks);assert.ok(workerChecks.created>0&&workerChecks.completed>0,'Offline analysis must complete in the embedded worker');
-    await page.getByRole('button',{name:'Show extended / supporting contributors',exact:true}).click();await waitAnalysis(page);assert.match(await page.locator('#analysis').innerText(),/25 nodes/);
+    await page.getByRole('button',{name:'Show extended / supporting contributors',exact:true}).click();await waitAnalysis(page);assert.match(await page.locator('#analysis').innerText(),/25 nodes/);await checkLegendStyles(page,'#legend');assert.equal(await page.locator('#legend .legend-categories i').count(),REFERENCE.categories.length);await captureLegend(page,name);
     const exported=await saveDownload(page,'Export SVG',`${name}-reference.svg`);const svg=await fs.readFile(exported,'utf8');assert.equal((svg.match(/data-node=/g)??[]).length,28);
-    const svgPage=await context.newPage();await svgPage.goto(pathToFileURL(exported).href);assert.equal(await svgPage.locator('parsererror').count(),0);await svgPage.goto(pathToFileURL(path.join(root,'dist/SOIPS-Dependency-Modeller.html')).href);await svgPage.setContent(`<html><body style="margin:0"><img src="${pathToFileURL(exported).href}" width="680"></body></html>`);await svgPage.locator('img').evaluate(async img=>{await (img as HTMLImageElement).decode();});await svgPage.screenshot({path:path.join(out,`${name}-export.png`),fullPage:true});await svgPage.close();
+    const svgPage=await context.newPage();await svgPage.goto(pathToFileURL(exported).href);assert.equal(await svgPage.locator('parsererror').count(),0);await checkLegendStyles(svgPage,'[data-export-legend]');await svgPage.locator('[data-export-legend]').screenshot({path:path.join(out,`${name}-export-legend.png`)});await svgPage.goto(pathToFileURL(path.join(root,'dist/SOIPS-Dependency-Modeller.html')).href);await svgPage.setContent(`<html><body style="margin:0"><img src="${pathToFileURL(exported).href}" width="680"></body></html>`);await svgPage.locator('img').evaluate(async img=>{await (img as HTMLImageElement).decode();});await svgPage.screenshot({path:path.join(out,`${name}-export.png`),fullPage:true});await svgPage.close();
     await page.getByRole('button',{name:'Edit',exact:true}).click();assert.match(await page.locator('#identity').innerText(),/Working copy/);
     const editor=page.locator('#editor');await editor.getByRole('button',{name:'Add node',exact:true}).click();await editor.getByLabel('Stable node ID',{exact:true}).fill('new-b');await editor.getByLabel('Node name',{exact:true}).fill('B4 New functional family');await editor.getByLabel('Category',{exact:true}).selectOption('dimB');await editor.getByRole('button',{name:'Save changes',exact:true}).filter({visible:true}).last().click();assert.equal(await page.locator('#graph [data-node]').count(),29);
     await editor.locator('.node-list').getByRole('button',{name:'Consciousness',exact:true}).click();await editor.getByRole('button',{name:'Add relationship',exact:true}).click();

@@ -1,6 +1,6 @@
 # Bundled SOIPS reference model
 
-The canonical [SOIPS JSON reference](../src/models/soips-reference.json) represents the Figure 2 dependency model accompanying J. R. Potas (2026), *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. Its scientific sources are Tables 1–3, §5 and Supplementary S1, especially the element definitions, S1.9 configurations, S1.10 sensitivity scenarios and S1.11 relationship audit. No publication DOI is supplied; that remains pending.
+The canonical [SOIPS JSON reference](../src/models/soips-reference.json) represents the Figure 2 dependency model accompanying J. R. Potas (2026), *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. PsyArXiv (preprint, version 1). [https://doi.org/10.31234/osf.io/jv4ah_v1](https://doi.org/10.31234/osf.io/jv4ah_v1). Its scientific sources are Tables 1–3, §5 and Supplementary S1, especially the element definitions, S1.9 configurations, S1.10 sensitivity scenarios and S1.11 relationship audit.
 
 The two identified SOIPS reference JSON files and this document are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode), copyright (c) 2026 J. R. Potas, the original model author. See [LICENSE-DATA](../LICENSE-DATA) for scope and attribution requirements. This licence does not apply to external manuscript, supplementary audit or published figure files. Application source code is separately licensed under [MIT](../LICENSE).
 

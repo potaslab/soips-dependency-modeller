@@ -8,13 +8,15 @@ Models describe proposed relationships among informational structures, functiona
 
 | Model | Author | Description | Licence |
 |---|---|---|---|
-| [SOIPS consciousness — Figure 2](soips-potas2026-figure2.json) | J. R. Potas (2026) | Reference model accompanying *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. | [CC BY 4.0](../LICENSE-DATA) |
+| [SOIPS consciousness — Figure 2](soips-potas2026-figure2.json) | J. R. Potas (2026) | Frozen reference model accompanying *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. PsyArXiv (preprint, version 1). | [CC BY 4.0](../LICENSE-DATA) |
 
-**Provenance:** Figure 2, Tables 1–3, §5 and Supplementary S1 of the manuscript. Node definitions and layout came from the original explorer; relationship explanations and source-type provenance came from the S1.11 relationship audit. The JSON preserves evidence, source notes and explicit `[JC]` modelling-judgement markers. The publication link and DOI remain pending. See the [scientific model notes](../docs/SCIENTIFIC_MODEL.md) for interpretation decisions and source details. This downloadable JSON is byte-identical to the [bundled canonical reference](../src/models/soips-reference.json).
+**Preprint DOI:** [https://doi.org/10.31234/osf.io/jv4ah_v1](https://doi.org/10.31234/osf.io/jv4ah_v1).
+
+**Provenance:** Figure 2, Tables 1–3, §5 and Supplementary S1 of the preprint. Node definitions and layout came from the original explorer; relationship explanations and source-type provenance came from the S1.11 relationship audit. The JSON preserves evidence, source notes and explicit `[JC]` modelling-judgement markers. See the [scientific model notes](../docs/SCIENTIFIC_MODEL.md) for interpretation decisions and source details. This downloadable JSON is byte-identical to the [bundled canonical reference](../src/models/soips-reference.json).
 
 **Documented analysis:** 28 elements and 90 relationships. For consciousness (`CON`), exact analysis gives three minimum-cardinality configurations of 12 elements and an expanded closure of 25 elements, excluding `AGE`, `PLA` and `PRE`. Both counts include the target `CON`. These are consequences of the encoded assumptions, not empirical thresholds for consciousness. The [scientific model notes](../docs/SCIENTIFIC_MODEL.md) list exact membership and nine sensitivity scenarios; [verification documentation](../docs/TESTING.md) describes their regression checks.
 
-The original model is retained separately from community contributions so that alternative models do not overwrite the manuscript reference.
+The frozen published reference is retained separately from community contributions, future modifications and extensions. Those models do not form part of the preprint's reference configuration.
 
 ## Community-contributed models
 

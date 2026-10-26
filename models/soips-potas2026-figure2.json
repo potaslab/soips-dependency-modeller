@@ -9,15 +9,15 @@
     "year": 2026,
     "version": "Figure 2 · 2026",
     "description": "Interpretive dependency model accompanying Supplementary S1. Configurations express commitments within this model, not experimentally established thresholds for consciousness.",
-    "citation": "Potas, J. R. (2026). Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis.",
-    "sourceUrl": "",
+    "citation": "Potas, J. R. (2026). Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis. PsyArXiv (preprint, version 1). https://doi.org/10.31234/osf.io/jv4ah_v1",
+    "sourceUrl": "https://doi.org/10.31234/osf.io/jv4ah_v1",
     "licence": "CC BY 4.0",
     "created": "2026-10-22",
     "updated": "2026-10-22",
     "researchReady": true,
     "provenance": {
       "source": "manuscript/SOIPS_Supplementary_S1_dependency_audit.md",
-      "publicationLinkStatus": "Pending; no DOI supplied",
+      "publicationLinkStatus": "Published as a PsyArXiv preprint (version 1)",
       "reference": true
     }
   },

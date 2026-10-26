@@ -11,6 +11,9 @@ test('Downloadable SOIPS reference is byte-identical to the canonical CC BY 4.0 
   const downloadable=fs.readFileSync(new URL('../models/soips-potas2026-figure2.json',import.meta.url));
   assert.deepEqual(downloadable,canonical);
   assert.equal(REFERENCE.metadata.licence,'CC BY 4.0');
+  assert.equal(REFERENCE.metadata.citation,'Potas, J. R. (2026). Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis. PsyArXiv (preprint, version 1). https://doi.org/10.31234/osf.io/jv4ah_v1');
+  assert.equal(REFERENCE.metadata.sourceUrl,'https://doi.org/10.31234/osf.io/jv4ah_v1');
+  assert.equal((REFERENCE.metadata.provenance as {publicationLinkStatus:string}).publicationLinkStatus,'Published as a PsyArXiv preprint (version 1)');
 });
 test('Phase 1: 28 nodes / 90 audit-backed relations, types and lossless round-trip',()=>{
   assert.equal(REFERENCE.nodes.length,28);assert.equal(REFERENCE.relations.length,90);

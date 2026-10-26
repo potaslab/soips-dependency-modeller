@@ -4,15 +4,19 @@
 
 Run `npm run build` locally to produce `dist/SOIPS-Dependency-Modeller.html`, then open that file directly in a browser. It embeds the application and reference model, so using the built file requires no installation, account, server or network. Keep a copy anywhere on your computer, or share it alongside your model JSON. `dist/index.html` is the equivalent static-hosting output. These generated files are excluded from Git and are not hosted downloads in this source repository; follow Development and verification below to build them from a source checkout.
 
-The software originates in the Self-Organising Information-Processing Systems Hypothesis — **J. R. Potas (2026)**. Model authorship is separate from software attribution. The reference model cites *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. Its publication link remains pending.
+The software originates in the Self-Organising Information-Processing Systems Hypothesis — **J. R. Potas (2026)**. Model authorship is separate from software attribution. The reference model accompanies the preprint cited below.
+
+## Associated preprint
+
+**Potas, J. R. (2026).** *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. PsyArXiv (preprint, version 1). [https://doi.org/10.31234/osf.io/jv4ah_v1](https://doi.org/10.31234/osf.io/jv4ah_v1)
+
+The [frozen machine-readable reference model](models/soips-potas2026-figure2.json) encodes the preprint's Figure 2 dependencies. The interactive modeller explores those assumptions and lets researchers [develop and contribute alternative models](CONTRIBUTING.md), kept separately from the published reference. The preprint is not a peer-reviewed journal publication and does not experimentally validate the proposed dependencies.
 
 ## Licence and citation
 
 Application source code is licensed under the [MIT Licence](LICENSE), copyright (c) 2026 J. R. Potas. The SOIPS reference JSON at `src/models/soips-reference.json` and `models/soips-potas2026-figure2.json`, together with `docs/SCIENTIFIC_MODEL.md`, is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/legalcode); see [LICENSE-DATA](LICENSE-DATA) for the exact scope. J. R. Potas (2026) is the original model author. MIT does not apply to these scientific materials, including copies embedded in the application. Commercial use, modification and redistribution are permitted under the respective licence terms; applicable third-party licences and notices remain in force.
 
 Derivative SOIPS models should retain source attribution and licence information and indicate modifications in accordance with CC BY 4.0. Independently created models retain their own authorship and may specify their own licences. These repository licences do not license the manuscript, supplementary audit or published figures outside the identified repository content.
-
-Provisional citation: Potas, J. R. (2026). *Rethinking Consciousness: The Self-Organising Information-Processing Systems Hypothesis*. No DOI, journal publication date or final citation is supplied.
 
 The application is an exploratory dependency-modelling tool. Its analysis reports consequences of the dependencies specified in a model; it does not independently validate those scientific assumptions.
 

@@ -5,6 +5,7 @@ import { AnalysisController } from './ui/analysis-controller';import { History }
 import { autoArrange, placedNodes, persistMissingPositions } from './view/layout';
 import { svgDiagram, exportSVG, kindLabels, type ViewOptions } from './view/svg-export';import { el, button, field, check, dialog } from './ui/dom';
 import { renderNotes } from './ui/notes';
+import { connectionSampleSVG, legendStyleNote } from './view/edge-style';
 import { createRelationshipState } from './editor/relationships';
 let history=new History(REFERENCE),reference=true,mode:'explore'|'edit'='explore',target=history.model.view.defaultRoot??'',selected:string|undefined;
 let action:'all'|'trace'|'minimum'|'expanded'='all',direction:'down'|'up'='down',defOnly=false,minimumIndex=0,compareIndex=0,zoom=1;
@@ -90,7 +91,10 @@ function renderGraph(){const model=history.model,graph=get('graph'),view=current
       const cancel=()=>{g.removeEventListener('pointermove',move);g.removeEventListener('pointerup',end);g.removeEventListener('pointercancel',cancel);g.removeAttribute('transform');g.style.cursor='grab';};g.addEventListener('pointermove',move);g.addEventListener('pointerup',end);g.addEventListener('pointercancel',cancel);
     });
   }
-  const legend=get('legend');legend.replaceChildren();for(const c of model.categories){const item=el('span'),swatch=el('i');swatch.style.background=c.colour;item.append(swatch,document.createTextNode(c.label));legend.append(item);}for(const kind of visibleKinds)legend.append(el('span',`${kind==='oneOf'?'···':kind==='supports'?'┄':kind==='canBuildOn'?'⇢':'—'} ${kindLabels[kind]}`));
+  const legend=get('legend'),categories=el('div',undefined,'legend-categories'),connections=el('div',undefined,'legend-connections');
+  for(const c of model.categories){const item=el('span',undefined,'legend-item'),swatch=el('i');swatch.style.background=c.colour;item.append(swatch,el('span',c.label,'legend-label'));categories.append(item);}
+  for(const kind of view.visibleKinds??visibleKinds){const item=el('span',undefined,'legend-item');item.innerHTML=connectionSampleSVG(kind);item.append(el('span',kindLabels[kind],'legend-label'));connections.append(item);}
+  legend.replaceChildren(categories,connections,el('p',legendStyleNote,'legend-note'));
 }
 function renderDetails(){const area=get('details'),model=history.model;area.replaceChildren();const node=model.nodes.find(n=>n.id===(selected||target));if(!node)return;
   area.append(el('h2',node.label),el('p',node.description));const groups=directRequirements(model,node.id);
